@@ -7,6 +7,15 @@ let  low=document.querySelector('.low');
 let  temp=document.querySelector('.temperature');
 
 
+let defaultpicarray=["images/3 (1).jpg","images/3 (1).png","images/3 (10).jpg","images/3 (11).jpg","images/3 (3).jpg","images/3 (4).jpg","images/3 (5).jpg","images/3 (6).jpg","images/3 (7).jpg","images/3 (8).jpg","images/3 (9).jpg"];
+
+let randombackground= Math.floor(Math.random() * defaultpicarray.length);
+
+let randSelect = "\'" +defaultpicarray[randombackground] + "\'";
+console.log(randSelect);
+document.getElementById("bg").style.backgroundColor="rgba(4,5,5,0.5)";
+document.body.style.background='url('+randSelect+') no-repeat center center / cover';
+
 icon.addEventListener('click',function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=5d4dd67e7d986febe8da4dd4ff23c270')
 
@@ -35,9 +44,29 @@ icon.addEventListener('click',function(){
     low.innerHTML=Math.round(celciusMin);
 
 if(desc=="Clouds"){
+document.body.style.background="Url('images/a.jpg') no-repeat center center / cover";
+let h1= document.getElementsByTagName("h1");
+for(let i=0 ; i < h1.length;i++){
+  h1[i].style.color="#000000";
 
+  let descrip= document.querySelectorAll(".description");
+for(let i=0; i<descrip.length;i++){
+  descrip[i].style.color="#000000";
+}
 }
 
+}
+else if(desc=="Haze"){
+  document.body.style.background="Url('images/c.png') no-repeat center center / cover";
+  let h1=document.getElementsByTagName("h1");
+for(let i=0 ; i < h1.length;i++){
+  h1[i].style.color="#000000";
+}
+let descrip= document.querySelectorAll(".description");
+for(let i=0; i<descrip.length;i++){
+  descrip[i].style.color="#000000";
+}
+ }
   });
    
  });

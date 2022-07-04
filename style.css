@@ -2,13 +2,15 @@
 
 body {
   background: linear-gradient(
-      90deg,
-      rgba(40, 40, 42, 0.2) 0%,
-      rgba(35, 47, 71, 0.2) 88%
-    ),
-    url("images/b.jpg") no-repeat center center / cover;
+    90deg,
+    rgba(40, 40, 42, 0.2) 0%,
+    rgba(35, 47, 71, 0.2) 88%
+  );
 }
-
+#bg {
+  width: 100%;
+  padding: 3%;
+}
 .search {
   width: 20%;
   margin: auto;
@@ -22,6 +24,7 @@ input[type="text"] {
   border: 5px solid rgb(0, 0, 0);
   border-radius: 37px;
   background: transparent;
+  color: #ffff;
 }
 
 ::placeholder {

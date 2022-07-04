@@ -20,33 +20,38 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-
     <title>J.A.S-Weather</title>
   </head>
   <body>
-    <div class="search">
-      <input
-        type="text"
-        class="geosearch"
-        id="location"
-        placeholder="Enter The location"
-      />
-      <i class="fa-solid fa-magnifying-glass-location fa-3x"></i>
-    </div>
-    <div class="city">
-      <h1 class="cityname">City Name</h1>
-    </div>
-    <div class="temp">
-      <h1 class="temperature">Temp</h1>
-      <h1 class="degree">Degree celsius</h1>
-    </div>
-    <div class="sky">
-      <h2 class="description">Description</h2>
-    </div>
+    <div id="bg">
+      <div class="search">
+        <input
+          type="text"
+          class="geosearch"
+          id="location"
+          placeholder="Enter The location"
+        />
+        <i class="fa-solid fa-magnifying-glass-location fa-3x"></i>
+      </div>
+      <div class="city">
+        <h1 class="cityname">City Name</h1>
+      </div>
+      <div class="temp">
+        <h1 class="temperature">Temp</h1>
+        <h1 class="degree">Degree celsius</h1>
+      </div>
+      <div class="sky">
+        <h2 class="description">Description</h2>
+      </div>
 
-    <div class="hilow">
-      <div class="hi"><h1>High</h1></div>
-      <div class="low"><h1>low</h1></div>
+      <div class="hilow">
+        <div class="hi description">
+          <h1 class="description">High</h1>
+        </div>
+        <div class="low description">
+          <h1 class="description">low</h1>
+        </div>
+      </div>
     </div>
     <script src="javascript.js"></script>
   </body>
