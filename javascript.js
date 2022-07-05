@@ -43,19 +43,36 @@ icon.addEventListener('click',function(){
     let celciusMin=parseInt(min)-273.15;
     low.innerHTML=Math.round(celciusMin);
 
+
+    
+    
+    
 if(desc=="Clouds"){
-document.body.style.background="Url('images/a.jpg') no-repeat center center / cover";
-let h1= document.getElementsByTagName("h1");
+
+  document.body.style.background="Url('images/a.jpg') no-repeat center center / cover";
+  let h1= document.getElementsByTagName("h1");
 for(let i=0 ; i < h1.length;i++){
   h1[i].style.color="#000000";
+}
 
-  let descrip= document.querySelectorAll(".description");
+let descrip= document.querySelectorAll(".description");
 for(let i=0; i<descrip.length;i++){
   descrip[i].style.color="#000000";
 }
+
+let defaultpicarray=["images/clouds/2 (1).jpg","images/clouds/2 (2).jpg","images/clouds/2 (3).jpg","images/clouds/2 (4).jpg","images/clouds/2 (5).jpg","images/clouds/2 (6).jpg","images/clouds/2 (7).jpg"];
+
+let randombackground= Math.floor(Math.random() * defaultpicarray.length);
+
+let randSelect = "\'" +defaultpicarray[randombackground] + "\'";
+console.log(randSelect);
+document.getElementById("bg").style.backgroundColor="rgba(0,0,0,0)";
+document.body.style.background='url('+randSelect+') no-repeat center center / cover';
 }
 
-}
+
+
+
 else if(desc=="Haze"){
   document.body.style.background="Url('images/c.png') no-repeat center center / cover";
   let h1=document.getElementsByTagName("h1");
@@ -66,6 +83,14 @@ let descrip= document.querySelectorAll(".description");
 for(let i=0; i<descrip.length;i++){
   descrip[i].style.color="#000000";
 }
+let defaultpicarray=["images/haze/1 (1).jpg","images/haze/1 (10).jpg","images/haze/1 (11).jpg","images/haze/1 (12).jpg","images/haze/1 (2).jpg","images/haze/1 (3).jpg","images/haze/1 (4).jpg","images/haze/1 (5).jpg","images/haze/1 (6).jpg","images/haze/1 (8).jpg","images/haze/1 (9).jpg"];
+
+let randombackground= Math.floor(Math.random() * defaultpicarray.length);
+
+let randSelect = "\'" +defaultpicarray[randombackground] + "\'";
+console.log(randSelect);
+document.getElementById("bg").style.backgroundColor="rgba(0,0,0,0)";
+document.body.style.background='url('+randSelect+') no-repeat center center / cover';
  }
   });
    

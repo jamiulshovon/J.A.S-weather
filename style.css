@@ -25,6 +25,7 @@ input[type="text"] {
   border-radius: 37px;
   background: transparent;
   color: #ffff;
+  background-color: rgba(4, 5, 5, 0.5);
 }
 
 ::placeholder {
@@ -62,7 +63,9 @@ input[type="text"] {
 .sky h2 {
   font-size: 46px;
   color: rgb(255, 255, 255);
-  font-weight: 200;
+  background-color: rgba(152, 248, 151, 0.5);
+  border-radius: 20px;
+  width: 41%;
 }
 
 .hi,
@@ -72,6 +75,9 @@ input[type="text"] {
   margin-top: 3%;
   font-family: "poppins", sans-serif;
   font-size: 40px;
+  background-color: rgba(192, 202, 202, 0.5);
+  border-radius: 10%;
+  width: 6%;
 }
 
 .hilow {
